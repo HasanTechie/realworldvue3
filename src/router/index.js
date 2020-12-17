@@ -37,10 +37,15 @@ const routes = [
     ]
   },
   {
-    path: '/about',
+    path: '/about-us',
     name: 'About',
-    component: About
-  }
+    component: About,
+    alias: '/about'
+  }//,
+  // {
+  //   path: '/about',
+  //   redirect: { name: 'About' }
+  // }
 ]
 
 const router = createRouter({
